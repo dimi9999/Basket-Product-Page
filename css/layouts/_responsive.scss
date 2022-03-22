@@ -1,0 +1,70 @@
+// 5. Responsive (MOBILE FIRST)
+
+// Tablets
+@media only screen and (min-width:$breakpoint-tablet) {}
+
+// Desktops
+@media only screen and (min-width:$breakpoint-desktop) {
+	header {
+		position:absolute;
+		top:0;
+		left:0;
+		width:100%;
+	}
+	header,
+	header .container {
+		padding:0;
+	}
+	header .container .logo,
+	header .container .basket {
+		flex-grow:1;
+		flex-basis:50%;
+		max-width:50%;
+		padding:60px 60px 0;
+		
+	}
+	header .container .basket {
+		background-color:$lightblue;
+		@include flexbox;
+		justify-content:flex-end;
+	}
+	main, main .container {
+		height:100%;
+	}
+	main .container {
+		flex-direction:row;
+		align-items:center;
+	}
+	.leftCol, .rightCol {
+		flex-basis:50%;
+		max-width:50%;
+		margin:0;
+	}
+	.leftCol {
+		& h1 {
+			font-size:40px;
+		}
+		
+		& .productDescription {
+			font-size:18px;
+			margin-left:auto;
+			margin-right:auto;
+			max-width:500px;
+		}
+	}
+	
+	.rightCol {
+		@include flexbox;
+		align-items:center;
+	    margin: 0;
+		height:100%; 
+		& .inner {
+			margin:0 auto;
+			max-width:500px;
+		}
+	 
+	}
+	#AddToBasket {
+		max-width:450px;
+	}
+}

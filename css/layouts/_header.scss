@@ -1,0 +1,26 @@
+// HEADER 
+ 
+	header {
+		background-color:$white;
+		padding:5px 0;
+		& .container {
+			@include flexbox;
+			align-items:center;
+			padding:15px 25px;
+			
+			& .logo {
+				flex-grow:2;
+			}
+			
+			& .basket .basketValue {
+				display:block;
+				background:url("../images/layers/svg/bag.svg") no-repeat; 
+				width: 26px;
+				height: 30px;
+				text-align: center;
+				line-height: 38px;
+			}
+		}
+	}
+
+

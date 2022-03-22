@@ -1,0 +1,69 @@
+// ADD TO BASKET BUTTON
+
+.btn-primary {
+	display:inline-block; 
+	border:none;
+	color:#fff;
+	background:$orange;
+	padding:15px 50px;
+	@include border-radius(50px);
+	font-family: 'Roboto',sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-weight: 600;
+	cursor:pointer;
+	transition:0.3s ease-in all;
+	font-size:13px;
+	 &:hover {
+		background:$green;
+		color:$white;
+	}
+		&:focus, 	
+		&:active {
+			color:$white;
+		}
+}
+
+// REMOVE FROM BASKET BUTTON	
+.btn-secondary {
+	display:inline-block;
+	border:none;
+	background:transparent;
+	color:$gray;
+	font-family: 'Roboto',sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-weight: 600;
+	cursor:pointer;
+	transition:0.3s ease-in all;
+	border-bottom:2px solid $gray;
+	font-size:13px;
+	text-align:center;
+
+	&:hover {
+		color:$orange;
+		border-bottom:2px solid $orange;
+	}
+ 
+}
+
+.btn-tertiary {
+	display:inline-block;
+	border:none;
+	background:transparent;
+	color:$black;
+	font-family: 'Roboto',sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-weight: 600;
+	cursor:pointer;
+	transition:0.3s ease-in all;
+	border-bottom:2px solid $gray;
+	font-size:13px;
+	text-align:center;
+
+	&:hover {
+		color:$orange;
+		border-bottom:2px solid $orange;
+	}
+}

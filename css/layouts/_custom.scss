@@ -1,0 +1,82 @@
+// 1. Custom
+// 2. Main container
+
+.container {
+	margin:0 auto;
+	width:100%;
+}
+ 
+// 3. Main
+
+main {
+	padding: 0;
+}
+main .container {
+	@include flexbox;
+	flex-direction:row;
+	flex-wrap:nowrap;
+	align-items:stretch;
+	flex-basis:100%;
+	flex-direction:column;
+	height:100%;
+	min-height:100%;
+}
+
+// 4. Left Col
+
+.leftCol {
+	background-color:$white;
+	flex-basis:100%;
+	max-width:100%;
+	text-align:center;
+	padding:60px 25px;
+	
+	& h1 {
+		font-size:24px;
+	}	
+	.productDescription {
+		color:$lightgray;
+		margin: 40px 0;
+		line-height:25px;
+	}
+}
+
+// 5. Right Col
+
+.rightCol {
+	background-color: #ecf6f8;
+    padding: 60px 45px;
+    flex-basis: 110%;
+    max-width: 110%;
+	
+	& .inner {
+		background-color:$white;
+		padding:40px;
+		-webkit-box-shadow: 6px 4px 17px 6px #ccc; 
+		box-shadow: 6px 4px 17px 6px #ccc;
+		text-align:center;
+	}
+	
+}
+// PRODUCT TITLE
+.productTitle {
+	font-size:18px;
+}
+
+// PRODUCT PRICE
+.productPrice {
+	color:$orange;
+	margin:0 0 20px;
+	font-weight:600;
+	letter-spacing:1px;
+}
+
+// PRODUCT IMAGE
+.productImage {
+	margin:0 0 20px;
+}
+
+
+ 
+
+ 
