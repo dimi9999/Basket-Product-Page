@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable="no">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+      <title>Powered by Dimitris A.Papakonstantinou
+      </title>
+      <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/checkout/">
+      <!-- Google Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100&display=swap" rel="stylesheet">
+      <!-- Bootstrap core CSS -->
+      <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+      <link href="css/main.css" rel="stylesheet">
+   </head>
+   <body>
+      <!-- HEADER -->
+      <header id="header">
+         <div class="container">
+            <a class="logo" href="/"><img src="images/logo.jpg" alt=""></a>
+            <div class="basket">
+               <span class="basketValue"><span class="total-count"></span></span>
+            </div>
+         </div>
+      </header>
+      <!-- MAIN -->
+      <main>
+         <div class="container">
+            <!-- LEFT COLUMN -->
+            <section class="leftCol">
+               <h1 class="productTitle">Ornare Vulputate Elit</h1>
+               <div class="productDescription">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                  exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+                  dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+               </div>
+            </section>
+            <!-- RIGHT COLUMN -->
+            <section class="rightCol">
+               <div class="inner">
+                  <div class="productImage">
+                     <img src="images/layers/png/chicken.png" alt="product Image">
+                  </div>
+                  <h2 class="productTitle">Natures Menu Dog Food Can Chicken</h2>
+                  <div class="productPrice">£22.81</div>
+                  <a href="#" data-name="Natures Menu Dog Food Can Chicken" data-price="22.81" id="productBtn" class="add-to-cart btn btn-primary" onclick="addToBasket();">Add to bag</a>
+                  <!-- LIST -->
+               </div>
+            </section>
+         </div>
+      </main>
+      <!-- ADD TO BASKET POPUP -->
+      <div id="AddToBasket">
+         <div class="heading">
+            <h3>Your Bag</h3>
+            <a href="#" class="closeBtn" onclick="hideBasket();"><i class="fas fa-times"></i></a>
+         </div>
+		 <div class="show-cart table"></div>
+		 <!--
+         <div class="content">
+            <div class="image">
+               <img src="images/layers/png/chicken.png" alt="product Image">
+            </div>
+            <div class="text">
+               <h2 class="productTitle">Natures Menu Dog Food Can Chicken</h2>
+               <div class="productPrice">£22.81</div>
+               <button id="removeBtn" class="delete-item btn-secondary">Remove</button>
+            </div>
+         </div>
+		 -->
+         <div class="subtotal">
+            <h3>Subtotal: £ <span class="total-cart"></span> </h3>
+            <a class="btn-primary block" href="#">Proceed to checkout</a>
+            <a class="btn-tertiary block" href="#" onclick="hideBasket()">Continue Shopping</a> &nbsp;
+			<a class="clear-cart block btn-tertiary" href="#" onclick="hideBasket()">Clear Basket</a>
+         </div>
+      </div>
+      <div ID="overlay"></div>
+      <!-- Placed at the end of the document so the pages load faster -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <!-- fucntions -->
+      <script src="js/functions.js"></script>
+	  <!-- sources https://codepen.io/chrisachinga/pen/MWwrZLJ -->
+   </body>
+</html>
